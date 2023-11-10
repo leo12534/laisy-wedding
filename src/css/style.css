@@ -359,7 +359,7 @@ section {
 }
 
 .primary-header__content picture {
-  background-image: url(src/img/stained-glass-3.jpeg);
+  background-image: url(../img/stained-glass-3.jpeg);
   padding: 0.15rem;
   flex-basis: 27%;
 }
