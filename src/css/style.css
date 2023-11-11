@@ -165,13 +165,15 @@ section {
 
 .primary-header__navigation {
   transition: var(--transition);
+  z-index: 2;
 }
 .open.primary-header__navigation {
   transition: var(--transition);
   background-color: var(--clr-secondary-100);
-  position: sticky;
+  position: absolute;
   top: 0;
-  z-index: 2;
+  left: 0;
+  right: 0;
 }
 
 /* Navigation */
@@ -542,6 +544,9 @@ section {
   padding: 1rem;
 }
 
+.venue-picture .venue-info .section-title {
+  font-size: var(--fs-800);
+}
 .venue-picture .venue-info .section-title i {
   color: var(--clr-accent-pri-100);
 }
@@ -550,6 +555,7 @@ section {
 }
 .venue-picture .venue-info .venue-address {
   color: var(--clr-accent-pri-100);
+  font-size: var(--fs-300);
 }
 
 .venue-picture .venue-img {
@@ -578,6 +584,11 @@ section {
   font-size: var(--fs-700);
 }
 
+@media (min-width: 48em) {
+  .venue-picture .venue-info .section-title {
+    font-size: var(--fs-900);
+  }
+}
 @media (min-width: 62em) {
   .venue-picture .svg-std {
     max-width: 10rem;
