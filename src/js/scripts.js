@@ -173,3 +173,14 @@ images.forEach((image) => {
     animation: tl,
   });
 });
+
+// Heart Animation
+
+var tlHeart = gsap.timeline();
+tlHeart.to('.svg-heart', {
+  transformOrigin: '50% 50%',
+  scale: 1.5,
+  repeat: -1,
+  rotate: -5,
+  yoyo: true,
+});
