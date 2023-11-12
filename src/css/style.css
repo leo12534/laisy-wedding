@@ -526,10 +526,7 @@ section {
 }
 
 .venue-picture .svg-std {
-  max-width: 6rem;
-  position: absolute;
-  right: 2rem;
-  top: 1.5rem;
+  display: none;
 }
 .venue-picture .venue-info {
   position: absolute;
@@ -581,11 +578,15 @@ section {
   .venue-picture .venue-info .section-title {
     font-size: var(--fs-900);
   }
-}
-@media (min-width: 62em) {
   .venue-picture .svg-std {
     max-width: 10rem;
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
   }
+}
+@media (min-width: 62em) {
   .venue-info--inner {
     display: grid;
     grid-template-areas:
