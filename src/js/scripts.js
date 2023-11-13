@@ -165,7 +165,7 @@ images.forEach((image) => {
   });
 
   ScrollTrigger.create({
-    trigger: '.primary-header__content',
+    trigger: '.primary-header',
     start: 'center center',
     end: 'bottom center',
     scrub: 2,

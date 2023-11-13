@@ -92,8 +92,9 @@ a:focus {
 }
 
 .container {
-  max-width: 90em;
-  margin: 0 auto;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
   padding: var(--container-p-y, 0) var(--container-p-x, var(--container-padding-x));
 }
 section {
