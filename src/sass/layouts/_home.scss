@@ -1,0 +1,311 @@
+.primary-header {
+  background-color: var(--clr-secondary-200);
+  max-height: 90vh;
+  line-height: 1;
+  border-bottom: 2px solid var(--clr-secondary-600);
+  /*  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.8rem;
+}
+
+/* Hero Text Section */
+.primary-header__copy {
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+  @media (min-width: 48em) {
+    transform: translateY(1.5rem);
+  }
+}
+
+.page-title {
+  font-size: var(--fs-900);
+  color: var(--clr-accent-pri-400);
+  text-shadow: var(--shadow-t-bottom--light);
+}
+.page-subtitle {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+  text-shadow: var(--shadow-t-top);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 0.75rem;
+}
+.page-subtitle::before,
+.page-subtitle::after {
+  content: '\2013';
+  padding: 0 0.5rem;
+}
+
+.page-date {
+  position: absolute;
+  transform: translateY(-3rem);
+  text-align: center;
+  font-size: var(--fs-600);
+  font-weight: var(--fw-900);
+  color: var(--clr-accent-pri-400);
+  text-shadow: var(--shadow-t-bottom--dark);
+  text-wrap: balance;
+  @media (min-width: 48em) {
+    font-size: var(--fs-700);
+    transform: translateY(1rem);
+  }
+  @media (min-width: 62em) {
+    font-size: var(--fs-800);
+  }
+}
+
+/* Hero 3 Column Image Section */
+.primary-header__content {
+  transform: translateY(4rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  @media (min-width: 87.5em) {
+    gap: clamp(2rem, 5vw, 15rem);
+  }
+}
+
+.primary-header__content :is(picture, img) {
+  border-radius: 10rem 10rem 1rem 1rem;
+  box-shadow: var(--bs);
+  height: 100%;
+  width: 100%;
+  /*  */
+  max-height: 700px;
+  max-width: 500px;
+}
+
+.primary-header__content :is(picture, img):not(:nth-child(2)) {
+  border-radius: 1rem;
+  max-height: 450px;
+  max-width: 450px;
+}
+
+.primary-header__content picture {
+  background-image: url(../assets/img/stained-glass-3.jpeg);
+  padding: 0.15rem;
+  flex-basis: 27%;
+  @media (min-width: 48em) {
+    padding: 0.5rem;
+  }
+  @media (min-width: 62em) {
+    padding: 0.75rem;
+  }
+}
+.primary-header__content picture img {
+  object-fit: cover;
+  border: 4px double var(--clr-secondary-200);
+}
+
+.primary-header__content picture:nth-child(1) {
+  aspect-ratio: 3/3;
+  background-size: 1000px 1000px;
+  background-position: bottom left;
+  align-self: center;
+}
+
+.primary-header__content picture:nth-child(2) {
+  aspect-ratio: 2/3;
+  background-size: 150px 150px;
+  background-position: top right;
+  position: relative;
+}
+
+.primary-header__content picture:nth-child(3) {
+  aspect-ratio: 3/3;
+  background-size: 1000px 1000px;
+  background-position: top right;
+  align-self: flex-start;
+}
+
+/* Intro Section */
+
+.intro {
+  --section-m-t: 7.5rem;
+  @media (min-width: 48em) {
+    --container-p-x: 5rem;
+    position: relative;
+    text-align: center;
+  }
+  @media (min-width: 62em) {
+    --container-p-x: 10.5rem;
+  }
+  @media (min-width: 75em) {
+    --section-m-t: 10rem;
+  }
+  @media (min-width: 87.5em) {
+    --section-m-t: 20rem;
+    --container-p-x: 23rem;
+  }
+  @media (min-width: 100em) {
+    --section-m-t: 25rem;
+  }
+}
+
+.intro-imgs {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-accent-pri-200);
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--clr-secondary-400);
+  border-bottom: 1px solid var(--clr-secondary-400);
+  @media (min-width: 48em) {
+    background-color: none;
+    padding: 0 0;
+    border: none;
+  }
+}
+
+.intro-imgs img {
+  object-fit: cover;
+  aspect-ratio: 10/9;
+  max-width: 32%;
+  border: 3px double var(--clr-secondary-400);
+  border-radius: var(--br);
+  @media (min-width: 48em) {
+    aspect-ratio: inherit;
+    position: absolute;
+    max-width: 8rem;
+    z-index: -1;
+    box-shadow: var(--bs);
+  }
+  @media (min-width: 87.5em) {
+    max-width: 15rem;
+  }
+}
+.intro-imgs img:nth-child(1) {
+  object-position: 25% 10%;
+  @media (min-width: 48em) {
+    left: 0rem;
+    top: 0;
+  }
+  @media (min-width: 62em) {
+    left: 3rem;
+    top: 10rem;
+    transform: rotate(-2deg);
+  }
+}
+
+@media (min-width: 48em) {
+  .intro-imgs img:nth-child(2) {
+    z-index: 1;
+    right: 5rem;
+    bottom: 0;
+    transform: rotate(-4deg);
+  }
+  .intro-imgs img:nth-child(3) {
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 62em) {
+  .intro-imgs img:nth-child(2) {
+    right: 7rem;
+    bottom: 0rem;
+  }
+  .intro-imgs img:nth-child(3) {
+    right: 2.5rem;
+    bottom: 3rem;
+  }
+}
+
+/* Venue info section */
+.venue-info--inner {
+  display: grid;
+  grid-template-areas:
+    'venue-picture '
+    'venue-map '
+    'venue-tips';
+  @media (min-width: 62em) {
+    grid-template-areas:
+      'venue-picture venue-picture venue-map'
+      'venue-picture venue-picture venue-tips';
+  }
+}
+
+.venue {
+  border-top: 2px solid var(--clr-secondary-600);
+  border-bottom: 2px solid var(--clr-secondary-600);
+}
+.venue-info--inner > * {
+  outline: 1px solid var(--clr-secondary-600);
+  padding: 0.5rem;
+}
+
+.venue-picture {
+  position: relative;
+  grid-area: venue-picture;
+}
+
+.venue-picture .venue-info {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.venue-picture .venue-info .section-title {
+  font-size: var(--fs-800);
+  @media (min-width: 48em) {
+    font-size: var(--fs-900);
+  }
+}
+.venue-picture .venue-info .section-title i {
+  color: var(--clr-accent-pri-100);
+}
+.venue-picture .venue-info .section-title b {
+  color: var(--clr-accent-pri-400);
+}
+.venue-picture .venue-info .venue-address {
+  color: var(--clr-accent-pri-100);
+  font-size: var(--fs-300);
+}
+
+.venue-picture .venue-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Side - MAP */
+.venue-map {
+  grid-area: venue-map;
+  background-color: var(--clr-accent-pri-400);
+  min-height: 16rem;
+}
+#venue-map {
+  border: 1px solid var(--clr-secondary-600);
+  margin: 0 auto;
+  border-radius: var(--br);
+  height: 100%;
+}
+
+.venue-tips {
+  grid-area: venue-tips;
+  padding: 2rem 0;
+}
+.venue-tips .section-title {
+  font-size: var(--fs-700);
+}
+
+/* Footer Section */
+footer {
+  background: var(--clr-accent-pri-200);
+  padding: 0.75rem 0;
+  font-size: var(--fs-300);
+  text-align: center;
+}
+
+footer svg {
+  max-width: 5rem;
+}
+footer .svg-heart {
+  fill: var(--clr-accent-sec-400);
+}
+
+.footer-title {
+  font-family: var(--ff-hero);
+  letter-spacing: 2px;
+}

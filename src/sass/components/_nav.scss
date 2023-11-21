@@ -1,0 +1,124 @@
+.primary-header__navigation {
+  transition: var(--transition);
+  z-index: 2;
+}
+.open.primary-header__navigation {
+  transition: var(--transition);
+  background-color: var(--clr-secondary-100);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Navigation */
+.primary-navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /*  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 62em) {
+    justify-content: space-between;
+  }
+}
+
+.primary-header__navigation.open .primary-navbar {
+  flex-wrap: wrap;
+}
+.primary-header__navigation.open .primary-nav {
+  flex-basis: 100%;
+}
+
+.primary-header__navigation.open .btn {
+  display: block;
+}
+
+.primary-navbar .btn {
+  --bg: var(--clr-accent-sec-400);
+  --bg-hover: var(--clr-primary);
+  --btn-p-y: 0.7rem;
+  --btn-p-x: 2rem;
+}
+
+.primary-navbar .logo {
+  font-family: var(--ff-hero);
+  font-size: var(--fs-700);
+  letter-spacing: 0.35rem;
+  color: var(--clr-secondary-400);
+  transition: var(--transition);
+}
+.primary-navbar .logo:is(:hover, :focus) {
+  color: var(--clr-accent-pri-400);
+}
+
+/* Hamburger + Functionalities */
+.hamburger {
+  cursor: pointer;
+  height: 35px;
+  @media (min-width: 62em) {
+    display: none;
+  }
+}
+
+.hamburger svg {
+  fill: var(--clr-secondary-400);
+}
+.hamburger[aria-expanded='true'] svg {
+  fill: var(--clr-accent-sec-400);
+}
+.hamburger[aria-expanded='true'] ~ .primary-nav {
+  display: block;
+}
+
+.primary-nav {
+  display: none;
+}
+
+.primary-nav__list li:not(:last-child) {
+  border-bottom: 1px solid var(--clr-secondary-200);
+  padding: 1.75rem 0;
+  width: 100%;
+  @media (min-width: 62em) {
+    border-bottom: none;
+    width: inherit;
+  }
+}
+
+.primary-nav__link {
+  display: block;
+  text-transform: uppercase;
+  font-size: var(--fs-300);
+  color: var(--clr-secondary-400);
+  font-weight: var(--fw-600);
+  letter-spacing: 2px;
+  text-shadow: var(--shadow-t-top);
+  transition: var(--transition);
+}
+
+.primary-nav__link:hover {
+  color: var(--clr-primary);
+  transform: translateY(-2px);
+  font-weight: var(--fw-800);
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--site-blue-color);
+}
+
+@media (min-width: 62em) {
+  .primary-header__navigation .btn:nth-child(2) {
+    display: none;
+  }
+
+  .primary-nav,
+  .primary-header__navigation.open .primary-nav {
+    display: block;
+    flex-basis: 80%;
+  }
+  .primary-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

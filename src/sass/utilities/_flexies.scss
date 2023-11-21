@@ -1,0 +1,12 @@
+.flexies {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 62em) {
+    gap: 1rem;
+    flex-direction: row;
+  }
+}
+
+.flexies > * {
+  flex-basis: 100%;
+}

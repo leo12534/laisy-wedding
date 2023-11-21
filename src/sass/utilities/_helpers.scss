@@ -34,42 +34,9 @@
   font-size: var(--fs-900);
 }
 
-/* Layout Classes */
-.flow-content > * + * {
-  margin-top: var(--flow-space, 1rem);
-}
-
-.flow-content--sm {
-  --flow-space: 0.5rem;
-}
-
-.flow-content--md {
-  --flow-space: 1.25rem;
-}
-
-.flow-content--lg {
-  --flow-space: 3rem;
-}
-
-.flexies {
-  display: flex;
-  flex-direction: column;
-}
-
-.flexies > * {
-  flex-basis: 100%;
-}
-
 .justify-content-center {
   justify-content: center;
 }
 .align-items-center {
   align-items: center;
-}
-
-@media (min-width: 62em) {
-  .flexies {
-    gap: 1rem;
-    flex-direction: row;
-  }
 }

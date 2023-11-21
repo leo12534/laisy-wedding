@@ -1,0 +1,57 @@
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--ff-headings);
+  text-wrap: balance;
+}
+a {
+  font-weight: var(--fw-700);
+  color: var(--clr-accent-sec-400);
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: var(--clr-primary);
+}
+body {
+  background-color: var(--clr-accent-pri-100);
+  font-family: var(--ff-body);
+  color: var(--clr-secondary-600);
+  font-size: var(--fs-400);
+}
+
+.section-title {
+  font-size: var(--fs-900);
+  color: var(--clr-primary);
+}
+.section-title i {
+  font-weight: var(--fw-400);
+  color: var(--clr-primary);
+}
+.section-title > * {
+  display: block;
+}
+.tilted-bg {
+  position: relative;
+  font-weight: var(--fw-900);
+  color: var(--clr-primary);
+  display: inline-block;
+}
+.tilted-bg:before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background-color: var(--clr-accent-pri-400);
+  z-index: -1;
+  transform: rotate(-3deg);
+}
+.sign-out {
+  color: var(--clr-primary);
+  font-weight: var(--fw-900);
+  font-size: var(--fs-600);
+  display: block;
+  position: relative;
+}

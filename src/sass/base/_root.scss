@@ -1,0 +1,50 @@
+:root {
+  --clr-neutral-50: #ffffffb0;
+  --clr-neutral-75: #ffffffd9;
+  --clr-neutral-100: #fff;
+  --clr-primary: #045dff;
+  --clr-secondary-100: #88f1df;
+  --clr-secondary-200: #16dfbe;
+  --clr-secondary-400: #0b7a67;
+  --clr-secondary-600: #052e27;
+  --clr-accent-pri-100: #fffde6;
+  --clr-accent-pri-200: #fff89a;
+  --clr-accent-pri-400: #ffee02;
+  --clr-accent-sec-400: #ff1053;
+
+  --ff-hero: 'Alegreya SC', serif;
+  --ff-headings: 'Playfair Display', serif;
+  --ff-body: 'Montserrat', sans-serif;
+
+  --fs-300: clamp(0.9rem, 0.14vw + 0.88rem, 0.98rem);
+  --fs-400: clamp(1.13rem, 0.31vw + 1.07rem, 1.31rem);
+  --fs-500: clamp(1.41rem, 0.58vw + 1.3rem, 1.75rem);
+  --fs-600: clamp(1.77rem, 0.98vw + 1.57rem, 2.33rem);
+  --fs-700: clamp(2.21rem, 1.56vw + 1.9rem, 3.1rem);
+  --fs-800: clamp(2.76rem, 2.4vw + 2.28rem, 4.14rem);
+  --fs-900: clamp(3.45rem, 3.59vw + 2.73rem, 5.51rem);
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+
+  --transition: 0.25s all ease-out;
+  --shadow-t-bottom--light: 1px 2px 0px var(--clr-secondary-400);
+  --shadow-t-bottom--dark: 1px 2px 0px var(--clr-secondary-600);
+  --shadow-t-top: 2px 1px 0px var(--clr-secondary-100);
+
+  --br: 1rem;
+  --bs: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+  --container-padding-x: 1rem;
+}
+
+@media (min-width: 62em) {
+  :root {
+    --shadow-t-bottom--light: 2px 4px 0px var(--clr-secondary-400);
+    --shadow-t-bottom--dark: 2px 4px 0px var(--clr-secondary-600);
+    --container-padding-x: 2rem;
+  }
+}
