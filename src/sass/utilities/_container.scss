@@ -11,7 +11,10 @@ section {
 
 .not-home section {
   margin-top: var(--section-m-t, 0rem);
-  padding: var(--section-p-y, 6rem) 0;
+  padding: var(--section-p-y, 2rem) 0;
+  @media (min-width: 48em) {
+    padding: var(--section-p-y, 6rem) 0;
+  }
 }
 
 .not-home section:not(:first-of-type) {
