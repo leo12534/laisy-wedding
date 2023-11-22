@@ -1,37 +1,84 @@
 /* Helper Classes */
 .ff-hero {
-  font-family: var(--ff-hero);
+  font-family: var(--ff-hero) !important;
 }
 .ff-headings {
-  font-family: var(--ff-headings);
+  font-family: var(--ff-headings) !important;
 }
 .ff-body {
-  font-family: var(--ff-body);
+  font-family: var(--ff-body) !important;
 }
 
 .fs-200 {
-  font-size: var(--fs-200);
+  font-size: var(--fs-200) !important;
 }
 .fs-300 {
-  font-size: var(--fs-300);
+  font-size: var(--fs-300) !important;
 }
 .fs-400 {
-  font-size: var(--fs-400);
+  font-size: var(--fs-400) !important;
 }
 .fs-500 {
-  font-size: var(--fs-500);
+  font-size: var(--fs-500) !important;
 }
 .fs-600 {
-  font-size: var(--fs-600);
+  font-size: var(--fs-600) !important;
 }
 .fs-700 {
-  font-size: var(--fs-700);
+  font-size: var(--fs-700) !important;
 }
 .fs-800 {
-  font-size: var(--fs-800);
+  font-size: var(--fs-800) !important;
 }
 .fs-900 {
-  font-size: var(--fs-900);
+  font-size: var(--fs-900) !important;
+}
+
+.fw-400 {
+  font-weight: var(--fw-400) !important;
+}
+.fw-500 {
+  font-weight: var(--fw-500) !important;
+}
+.fw-600 {
+  font-weight: var(--fw-600) !important;
+}
+.fw-700 {
+  font-weight: var(--fw-700) !important;
+}
+.fw-800 {
+  font-weight: var(--fw-800) !important;
+}
+.fw-900 {
+  font-weight: var(--fw-900) !important;
+}
+
+.clr-primary {
+  color: var(--clr-primary) !important;
+}
+.clr-secondary-100 {
+  color: var(--clr-secondary-100) !important;
+}
+.clr-secondary-200 {
+  color: var(--clr-secondary-200) !important;
+}
+.clr-secondary-400 {
+  color: var(--clr-secondary-400) !important;
+}
+.clr-secondary-600 {
+  color: var(--clr-secondary-600) !important;
+}
+.clr-accent-pri-100 {
+  color: var(--clr-accent-pri-100) !important;
+}
+.clr-accent-pri-200 {
+  color: var(--clr-accent-pri-200) !important;
+}
+.clr-accent-pri-400 {
+  color: var(--clr-accent-pri-400) !important;
+}
+.clr-accent-sec-400 {
+  color: var(--clr-accent-sec-400) !important;
 }
 
 .justify-content-center {

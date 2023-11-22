@@ -1,9 +1,22 @@
 .container {
-  max-width: 90rem;
+  max-width: var(--container-mw, 90rem);
   margin-left: auto;
   margin-right: auto;
   padding: var(--container-p-y, 0) var(--container-p-x, var(--container-padding-x));
 }
+
 section {
   margin-top: var(--section-m-t, 6rem);
+}
+
+.not-home section {
+  margin-top: var(--section-m-t, 0rem);
+  padding: var(--section-p-y, 6rem) 0;
+}
+
+.not-home section:not(:first-of-type) {
+  border-top: 2px solid var(--clr-secondary-600);
+}
+.not-home section:last-of-type {
+  border-bottom: 2px solid var(--clr-secondary-600);
 }

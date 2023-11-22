@@ -35,13 +35,6 @@
   display: block;
 }
 
-.primary-navbar .btn {
-  --bg: var(--clr-accent-sec-400);
-  --bg-hover: var(--clr-primary);
-  --btn-p-y: 0.7rem;
-  --btn-p-x: 2rem;
-}
-
 .primary-navbar .logo {
   font-family: var(--ff-hero);
   font-size: var(--fs-700);

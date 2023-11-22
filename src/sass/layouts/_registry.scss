@@ -1,0 +1,23 @@
+.registry .container {
+  --container-mw: 60.5rem;
+}
+
+.registry-logo {
+  background-color: var(--clr-neutral-100);
+  padding: 1rem;
+  border-radius: var(--br);
+  box-shadow: var(--shadow-t-bottom--light);
+  margin-inline: auto;
+  transition: var(--transition);
+  max-width: 15.65rem;
+  &:hover {
+    background-color: var(--clr-neutral-50);
+    transform: translateY(-5px);
+  }
+}
+
+.monzo-info {
+  background-color: var(--clr-accent-pri-200);
+  padding: 1rem;
+  border-radius: var(--br);
+}

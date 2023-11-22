@@ -64,7 +64,7 @@ async function initMapB() {
 
   // The map, centered at Hilton Garden Inn Roslyn
 
-  map = new Map(document.getElementById('hilton__map'), {
+  map = new Map(document.getElementById('hilton-maps'), {
     zoom: 14,
     center: position,
     disableDefaultUI: false,

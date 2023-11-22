@@ -1,0 +1,10 @@
+.not-home .page-title {
+  color: var(--clr-primary);
+  text-shadow: none;
+}
+
+.not-home section .sign-out {
+  @media (max-width: 48em) {
+    text-align: right;
+  }
+}
