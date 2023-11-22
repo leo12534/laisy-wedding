@@ -1,3 +1,10 @@
+.accomodations .page-title {
+  font-size: var(--fs-800);
+  @media (min-width: 48em) {
+    font-size: var(--fs-900);
+  }
+}
+
 .map-outer {
   padding: 0.75rem;
   background-color: var(--clr-accent-pri-400);
