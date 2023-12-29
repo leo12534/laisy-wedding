@@ -11,7 +11,7 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="home">
     <header class="primary-header gsap-hero">
       <div class="primary-header__navigation gsap-h">
         <div class="container primary-navbar">
@@ -27,11 +27,12 @@
           <nav class="primary-nav" aria-label="main">
             <ul class="primary-nav__list">
               <li><a class="primary-nav__link" href="#">Ceremonia</a></li>
-              <li><a class="primary-nav__link" href="/accomodation.html">ACOMODACIÓN</a></li>
-              <!-- <li><a class="primary-nav__link" href="/things-to-do.html">Things To Do</a></li> -->
-              <li><a class="primary-nav__link" href="/registry.html">Regalos</a></li>
-              <li><a class="primary-nav__link" href="/faqs.html">Preguntas</a></li>
+              <li><a class="primary-nav__link" href="#venue">Informacion De Local</a></li>
+              <li><a class="primary-nav__link" href="#registry">Regalos</a></li>
               <li><a class="btn" href="https://withjoy.com/laisy/rsvp" target="_blank">RSVP</a></li>
+
+              <!-- <li><a class="primary-nav__link" href="/faqs.html">Preguntas</a></li> -->
+              <!-- <li><a class="primary-nav__link" href="/accomodation.html">ACOMODACIÓN</a></li> -->
             </ul>
           </nav>
         </div>
@@ -39,9 +40,8 @@
       <div class="primary-header__copy">
         <img class="svg-ring gsap-hero" src="/assets/img/ring-svg.svg" alt="" />
         <h1 class="page-title ff-hero gsap-hero">La Boda De</h1>
-
-        <h2 class="page-title ff-hero gsap-hero">Daisy & Leo</h2>
-        <p class="page-subtitle gsap-hero">Sea Cliff Manor, NYC</p>
+        <h2 class="page-title ff-hero gsap-hero fs-800">Daisy & Leo</h2>
+        <p class="page-subtitle gsap-hero mt-2">Sea Cliff Manor, NYC</p>
       </div>
       <div class="primary-header__content">
         <picture class="gsap-hero">
@@ -58,15 +58,15 @@
     </header>
     <section class="intro flow-content">
       <div class="container fs-500 flow-content flow-content--md">
-        <h2 class="section-title"><i>Celebrate with us</i> <b>In New York</b></h2>
+        <h2 class="section-title"><i>Celebra con nosotros</i> <b>En Long Island</b></h2>
         <p>
-          We're taking the plunge and getting married! Crazy, right? But we couldn't imagine celebrating without all of
-          you there to join in on the fun. We're still nailing down the timings, but we'll keep you in the loop as
-          everything comes together. In the meantime, block off <span class="tilted-bg">30 May 2024</span> on your
-          calendar and start practicing your dance moves!
+          ¡Su presencia significa el mundo para nosotros, y no podemos esperar a festejar este día tan especial con
+          ustedes! Por favor, déjenos saber si van a atender antes de
+          <span class="tilted-bg">29 de Febrero 2024</span> o lo más pronto posible.
         </p>
-        <p>Can't wait to party with you!</p>
-        <p class="ff-headings sign-out">- Daisy & Leo</p>
+        <p class="fs-200">El código de vestimenta es traje formal</p>
+        <p>¡No podemos esperar a festejar con ustedes!</p>
+        <p class="ff-headings sign-out">- Leandro & Daisy</p>
       </div>
       <div class="intro-imgs">
         <img
@@ -86,15 +86,15 @@
           alt="Daisy and Leo Drunk at the hotel rooftop" />
       </div>
     </section>
-    <section class="venue">
+    <section class="venue" id="venue">
       <div class="container">
         <div class="venue-info--inner">
           <picture class="venue-picture">
             <img class="svg-std" src="/assets/img/std-svg.svg" alt="" />
             <img class="venue-img" src="/assets/img/venue-img.jpg" alt="Sea Cliff Manor Wedding Venue" />
             <div class="venue-info">
-              <h2 class="section-title"><i>Celebre con nosotros</i> <b>Sea Cliff Manor</b></h2>
-              <p class="venue-address">395 Prospect Ave, Sea Cliff, NY 11579</p>
+              <h2 class="section-title"><!-- <i>Celebre con nosotros</i> --><b>Sea Cliff Manor</b></h2>
+              <!-- <p class="venue-address">395 Prospect Ave, Sea Cliff, NY 11579</p> -->
             </div>
           </picture>
           <div class="venue-map">
@@ -102,30 +102,48 @@
           </div>
           <div class="venue-tips">
             <div class="container flow-content">
-              <h2 class="section-title tilted-bg">Travel Tips</h2>
-              <ul>
-                <li>
-                  <strong>If you’re a UK citizen</strong>, you’ll need an
-                  <a target="_blank" href="https://www.dhs.gov/electronic-system-travel-authorization-esta"
-                    >ESTA (Visa)</a
-                  >.
-                </li>
-                <li>
-                  <strong>If you're a UK resident</strong> who is also a citizen of somewhere else, you’ll need an
-                  actual visa, usually a B-1/B-2. Shout if this is you and we will help with whatever papers you need!
-                </li>
-                <li>
-                  <a href="https://www.jetblue.com/" target="_blank">Jetblue</a> is a our favourite way to travel to
-                  NYC.
-                </li>
-              </ul>
+              <h2 class="section-title tilted-bg">Dirección</h2>
               <p>
-                Remember, it's gonna be a long flight over and jet lag is no joke. So plan accordingly and give yourself
-                some time to adjust before the wedding kicks off.
+                <a href="https://maps.app.goo.gl/vPysNrGRnUXaNhpS8" target="_blank"
+                  >395 Prospect Ave, Sea Cliff, NY 11579</a
+                >
+              </p>
+              <h2 class="tilted-bg">Estacionamiento</h2>
+              <p>
+                Sea Cliff Manor ofrece amplio espacio de estacionamiento. Si quiere dejar su coche por la noche, puede
+                hacerlo y recogerlo al día siguiente antes de las 10 de la mañana.
               </p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="registry" id="registry">
+      <div class="container flow-content">
+        <h2 class="section-title">Regalos de Boda</h2>
+        <p class="fs-500">
+          Estamos encantados de que sean parte de nuestro día especial. Su presencia es un regalo sin medida, y
+          realmente no esperamos nada más.
+        </p>
+
+        <!-- <p>
+          Alternativamente, si prefiere apoyar nuestra renovación de la casa, puede enviar un pequeño donativo a esta
+          cuenta:
+        </p>
+        <div class="monzo-info flow-content flow-content--sm">
+          <p>
+            <strong class="clr-primary"><u>Monzo</u></strong>
+          </p>
+          <p><span class="clr-primary fw-600">Sort:</span> 04-00-04</p>
+          <p><span class="clr-primary fw-600">Account:</span> 18059689 - Bermeo Baldwin</p>
+        </div> -->
+
+        <p class="fs-500">
+          Su amor y sus buenos deseos significan mucho para nosotros. Estamos increíblemente agradecidos por su
+          amabilidad y apoyo.
+        </p>
+        <p class="fs-500">Muchas Gracias</p>
+        <p class="ff-headings sign-out">- Leandro &amp; Daisy</p>
       </div>
     </section>
 

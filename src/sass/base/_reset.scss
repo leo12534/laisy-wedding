@@ -54,6 +54,10 @@ button[class] {
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;

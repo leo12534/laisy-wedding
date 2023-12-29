@@ -81,9 +81,21 @@
   color: var(--clr-accent-sec-400) !important;
 }
 
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
+.mt-2 {
+  margin-top: 1.5rem !important;
+}
+
 .justify-content-center {
   justify-content: center;
 }
 .align-items-center {
   align-items: center;
+}
+
+.text-center {
+  text-align: center !important;
 }

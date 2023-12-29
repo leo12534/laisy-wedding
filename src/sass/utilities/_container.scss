@@ -5,7 +5,18 @@
   padding: var(--container-p-y, 0) var(--container-p-x, var(--container-padding-x));
 }
 
-section {
+.home section {
+  padding: var(--section-p-y, 3rem) var(--section-p-x, 0rem);
+}
+
+.home section:not(:first-of-type) {
+  border-bottom: 2px solid var(--clr-secondary-600);
+}
+
+.home section.intro,
+.home section.venue {
+  --section-p-y: 0rem;
+  --section-p-x: 0rem;
   margin-top: var(--section-m-t, 6rem);
 }
 

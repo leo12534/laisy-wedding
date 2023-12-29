@@ -126,6 +126,7 @@
 
 .intro {
   --section-m-t: 7.5rem;
+  --section-p-t: 0;
   @media (min-width: 48em) {
     --container-p-x: 5rem;
     position: relative;
@@ -214,6 +215,9 @@
 }
 
 /* Venue info section */
+.venue {
+  background: var(--clr-neutral-85);
+}
 .venue-info--inner {
   display: grid;
   grid-template-areas:
@@ -289,6 +293,8 @@
 .venue-tips .section-title {
   font-size: var(--fs-700);
 }
+
+// Registry Section - Spanish site
 
 /* Footer Section */
 footer {
