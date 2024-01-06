@@ -9,8 +9,12 @@
   justify-content: space-between;
   gap: 1.8rem;
 
-  @media (max-height: 48em) {
-    max-height: 115vh;
+  @media (min-height: 30em) {
+    max-height: 145vh;
+  }
+
+  @media (min-height: 48em) {
+    max-height: 90vh;
   }
 }
 
