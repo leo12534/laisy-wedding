@@ -40,30 +40,41 @@
     <section class="faqs">
       <div class="container flow-content flow-content--sm">
         <h2 class="page-title">FAQs</h2>
-        <p class="fw-700 clr-primary"><strong>Q:</strong> <span>Do I need a Visa?</span></p>
-        <p class="lead mb-2"><strong class="fw-700 text-green">A:</strong> Yes: <span> </span></p>
-        <ul>
-          <li class="lead">
-            <strong>If you’re a UK citizen</strong>, you’ll need an
-            <a target="_blank" href="https://www.dhs.gov/electronic-system-travel-authorization-esta">ESTA (Visa)</a>.
-          </li>
-          <li class="lead">
-            <strong>If you're a UK resident</strong> who is also a citizen of somewhere else, you’ll need an actual
-            visa, usually a B-1/B-2. Shout if this is you and we will help with whatever papers you need!
-          </li>
-        </ul>
+        <div class="faq-outer">
+          <button class="faq-btn">
+            <h2 class="clr-primary">Travelling to the USA:</h2>
+            <svg class="faq-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.4 45.4">
+              <path
+                d="M41.3 18.6H26.8V4a4.1 4.1 0 1 0-8.2 0v14.5H4a4.1 4.1 0 0 0 0 8.3h14.5v14.4a4.1 4.1 0 0 0 4.1 4.1 4 4 0 0 0 4.1-4.1V26.9h14.5a4.1 4.1 0 0 0 0-8.3z" />
+            </svg>
+          </button>
+        </div>
+        <div class="faq-inner flow-content flow-content--sm">
+          <p class="fw-700 clr-primary"><strong>Q:</strong> <span>Do I need a Visa?</span></p>
+          <p><strong>A:</strong> Yes: <span> </span></p>
+          <ul>
+            <li>
+              <strong>If you’re a UK citizen</strong>, you’ll need an
+              <a target="_blank" href="https://www.dhs.gov/electronic-system-travel-authorization-esta">ESTA (Visa)</a>.
+            </li>
+            <li>
+              <strong>If you're a UK resident</strong> who is also a citizen of somewhere else, you’ll need an actual
+              visa, usually a B-1/B-2. Shout if this is you and we will help with whatever papers you need!
+            </li>
+          </ul>
+        </div>
 
-        <p></p>
+        <!--  -->
 
         <p class="fw-700 clr-primary"><strong>Q:</strong> <span>Do you have any flight tips?</span></p>
-        <p class="lead mb-2">
-          <strong class="fw-700 text-green">A:</strong
+        <p>
+          <strong>A:</strong
           ><span>
             If you are traveling for a longer period, like, over a week we recommend JetBlue or British Airways. We tend
             to get one big checked bag and share it rather than one each.</span
           >
         </p>
-        <p class="lead">
+        <p>
           <span
             >If you're going for a shorter time, it's an American Bank Holiday (Memorial Day, 27 May 24) so the prices
             have gone up a bit. We recommend Norse as they've not jacked up their prices.
@@ -72,30 +83,27 @@
         </p>
 
         <p class="fw-700 clr-primary"><strong>Q:</strong> <span>What should I wear?</span></p>
-        <p class="lead">
-          <strong class="fw-700 text-green">A:</strong
-          ><span> No jeans, no white dresses! Everything else is fair game. </span>
-        </p>
+        <p><strong>A:</strong><span> No jeans, no white dresses! Everything else is fair game. </span></p>
 
         <p class="fw-700 clr-primary"><strong>Q:</strong> <span>Can we get you a gift?</span></p>
-        <p class="lead mb-2">
-          <strong class="fw-700 text-green">A:</strong
+        <p>
+          <strong>A:</strong
           ><span>
             Absolutely not! However! We know some of you will insist. If you do insist, we've made a small list of
             things that can be sent to us in London.</span
           >
         </p>
-        <p class="lead mb-2">
+        <p>
           <span
             >We're really grateful for your generosity but please we can't take a hoover / vacuum back in the plane with
             us.
           </span>
         </p>
-        <p class="lead"><span>Honestly, we just want you there. That's the best present for us. </span></p>
+        <p><span>Honestly, we just want you there. That's the best present for us. </span></p>
 
         <p class="fw-700 clr-primary"><strong>Q:</strong> <span>Do I need a car seat for my child?</span></p>
-        <p class="lead mb-2">
-          <strong class="fw-700 text-green">A:</strong>
+        <p>
+          <strong>A:</strong>
           <span>
             Yes there are a few things. If they rent a car, they need to rent car seats for children as well. If they
             are under 40lbs, the seat must be rear facing. Under 4ft, they need a front facing or booster seat. Kids
@@ -121,49 +129,10 @@
         <p class="copyright">Website Designed by Leo. Photography by <a href="" target="_blank">Craig McCann</a></p>
       </div>
     </footer>
-    <script>
-      ((g) => {
-        var h,
-          a,
-          k,
-          p = 'The Google Maps JavaScript API',
-          c = 'google',
-          l = 'importLibrary',
-          q = '__ib__',
-          m = document,
-          b = window;
-        b = b[c] || (b[c] = {});
-        var d = b.maps || (b.maps = {}),
-          r = new Set(),
-          e = new URLSearchParams(),
-          u = () =>
-            h ||
-            (h = new Promise(async (f, n) => {
-              await (a = m.createElement('script'));
-              e.set('libraries', [...r] + '');
-              for (k in g)
-                e.set(
-                  k.replace(/[A-Z]/g, (t) => '_' + t[0].toLowerCase()),
-                  g[k]
-                );
-              e.set('callback', c + '.maps.' + q);
-              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
-              d[q] = f;
-              a.onerror = () => (h = n(Error(p + ' could not load.')));
-              a.nonce = m.querySelector('script[nonce]')?.nonce || '';
-              m.head.append(a);
-            }));
-        d[l]
-          ? console.warn(p + ' only loads once. Ignoring:', g)
-          : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
-      })({
-        key: 'AIzaSyBfp4GxP6S13-HFTnGDncVzPYhDehHD6Kc',
-        v: 'beta',
-      });
-    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/map.js"></script>
+    <script src="assets/js/faqs.js"></script>
+    <!-- <script src="assets/js/map.js"></script> -->
   </body>
 </html>

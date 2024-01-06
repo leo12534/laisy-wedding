@@ -1,3 +1,29 @@
 .faqs .container {
   --container-mw: 60.5rem;
 }
+
+.faq-outer button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+
+  & svg {
+    width: 20px;
+    fill: var(--clr-primary);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.faq-outer,
+.faq-inner {
+  background-color: var(--clr-neutral-85);
+  border-radius: var(--br);
+  padding: 0.85rem 1rem;
+}
+.faq-inner {
+  display: none;
+}

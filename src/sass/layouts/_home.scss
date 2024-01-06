@@ -8,6 +8,10 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1.8rem;
+
+  @media (max-height: 48em) {
+    max-height: 115vh;
+  }
 }
 
 /* Hero Text Section */
@@ -215,7 +219,8 @@
 }
 
 /* Venue info section */
-.venue {
+.home .venue,
+.home .hotel {
   background: var(--clr-neutral-85);
 }
 .venue-info--inner {

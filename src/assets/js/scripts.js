@@ -184,3 +184,9 @@ tlHeart.to('.svg-heart', {
   rotate: -5,
   yoyo: true,
 });
+
+// Faq Section
+
+const faqOuter = document.querySelector('.faq-outer');
+
+console.log(faqOuter);

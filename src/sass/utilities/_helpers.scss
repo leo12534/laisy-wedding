@@ -77,6 +77,9 @@
 .clr-accent-pri-400 {
   color: var(--clr-accent-pri-400) !important;
 }
+.clr-accent-sec-100 {
+  color: var(--clr-accent-sec-100) !important;
+}
 .clr-accent-sec-400 {
   color: var(--clr-accent-sec-400) !important;
 }
@@ -95,7 +98,12 @@
 .align-items-center {
   align-items: center;
 }
-
 .text-center {
   text-align: center !important;
+}
+.d-block {
+  display: block !important;
+}
+.w-100 {
+  width: 100% !important;
 }
