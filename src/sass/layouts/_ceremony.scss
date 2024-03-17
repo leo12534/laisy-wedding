@@ -207,8 +207,10 @@
   position: absolute;
   width: 90px;
   height: 90px;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55px;
   border: solid 5px #ffffff;
   border-radius: 50px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
